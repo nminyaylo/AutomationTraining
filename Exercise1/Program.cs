@@ -26,7 +26,7 @@ namespace Exercise1
             var sqrtZ = Math.Sqrt(z);
             var result1 = (x + y) * sqrtZ++;
 
-            Console.WriteLine("Result1 " + result1);
+            Console.WriteLine("First expression result: " + result1);
             
         // 2. Уменьшенный на единицу остаток от деления x на z, умноженный на
         // квадратный корень из y 

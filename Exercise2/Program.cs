@@ -21,7 +21,7 @@ namespace Exercise2
             var rectangleDiagonal = Math.Sqrt(Math.Pow(width, 2) + Math.Pow(height, 2));
             var parallelepipedDiagonal = Math.Sqrt(Math.Pow(rectangleDiagonal, 2) + Math.Pow(length, 2));;
 
-            Console.WriteLine("Length of the parallelepiped's diagonal is " + parallelepipedDiagonal);
+            Console.WriteLine("Parallelepiped diagonal length: " + parallelepipedDiagonal);
         
         }
     }
