@@ -1,0 +1,11 @@
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/bin/Debug/netcoreapp3.0/Exercise1
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/bin/Debug/netcoreapp3.0/Exercise1.deps.json
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/bin/Debug/netcoreapp3.0/Exercise1.runtimeconfig.json
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/bin/Debug/netcoreapp3.0/Exercise1.runtimeconfig.dev.json
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/bin/Debug/netcoreapp3.0/Exercise1.dll
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/bin/Debug/netcoreapp3.0/Exercise1.pdb
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/obj/Debug/netcoreapp3.0/Exercise1.csprojAssemblyReference.cache
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/obj/Debug/netcoreapp3.0/Exercise1.AssemblyInfoInputs.cache
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/obj/Debug/netcoreapp3.0/Exercise1.AssemblyInfo.cs
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/obj/Debug/netcoreapp3.0/Exercise1.dll
+/Users/Natasha/Desktop/AutomationTraining/Exercise1/obj/Debug/netcoreapp3.0/Exercise1.pdb
