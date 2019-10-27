@@ -1,0 +1,11 @@
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/bin/Debug/netcoreapp3.0/AuthenticationApp
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/bin/Debug/netcoreapp3.0/AuthenticationApp.deps.json
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/bin/Debug/netcoreapp3.0/AuthenticationApp.runtimeconfig.json
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/bin/Debug/netcoreapp3.0/AuthenticationApp.runtimeconfig.dev.json
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/bin/Debug/netcoreapp3.0/AuthenticationApp.dll
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/bin/Debug/netcoreapp3.0/AuthenticationApp.pdb
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/obj/Debug/netcoreapp3.0/AuthenticationApp.csprojAssemblyReference.cache
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/obj/Debug/netcoreapp3.0/AuthenticationApp.AssemblyInfoInputs.cache
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/obj/Debug/netcoreapp3.0/AuthenticationApp.AssemblyInfo.cs
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/obj/Debug/netcoreapp3.0/AuthenticationApp.dll
+/Users/Natasha/Desktop/AutomationTraining/Solution2/AuthenticationApp/obj/Debug/netcoreapp3.0/AuthenticationApp.pdb

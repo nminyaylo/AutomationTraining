@@ -1,0 +1,11 @@
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/obj/Debug/netcoreapp3.0/CalculatorApp.csprojAssemblyReference.cache
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/obj/Debug/netcoreapp3.0/CalculatorApp.AssemblyInfoInputs.cache
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/obj/Debug/netcoreapp3.0/CalculatorApp.AssemblyInfo.cs
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/bin/Debug/netcoreapp3.0/CalculatorApp
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/bin/Debug/netcoreapp3.0/CalculatorApp.deps.json
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/bin/Debug/netcoreapp3.0/CalculatorApp.runtimeconfig.json
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/bin/Debug/netcoreapp3.0/CalculatorApp.runtimeconfig.dev.json
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/bin/Debug/netcoreapp3.0/CalculatorApp.dll
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/bin/Debug/netcoreapp3.0/CalculatorApp.pdb
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/obj/Debug/netcoreapp3.0/CalculatorApp.dll
+/Users/Natasha/Desktop/AutomationTraining/Solution2/CalculatorApp/obj/Debug/netcoreapp3.0/CalculatorApp.pdb
