@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculator_app", "calculator_app\calculator_app.csproj", "{12D2959E-4284-4271-962F-0C967D8610CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "authentication_app", "authentication_app\authentication_app.csproj", "{98428B72-9D16-4543-8219-55607E7E1EF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12D2959E-4284-4271-962F-0C967D8610CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D2959E-4284-4271-962F-0C967D8610CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D2959E-4284-4271-962F-0C967D8610CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D2959E-4284-4271-962F-0C967D8610CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98428B72-9D16-4543-8219-55607E7E1EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98428B72-9D16-4543-8219-55607E7E1EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98428B72-9D16-4543-8219-55607E7E1EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98428B72-9D16-4543-8219-55607E7E1EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7F0A0C0-170C-4A24-85D1-1FAA21A53631}
+	EndGlobalSection
+EndGlobal
