@@ -9,62 +9,107 @@ namespace CalculatorApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static bool TryToConvertInsertedOperandToInteger(string insertedOperand)
         {
-        Label1:
-            Console.WriteLine("Enter first integer operand");
-            string insertedFirstOperand = Console.ReadLine();
+            double integerOperand;
+            bool operandIsInteger = double.TryParse(insertedOperand, out integerOperand);
+            return operandIsInteger;
+        }
+
+        static double ConvertInsertedOperandToInteger(string insertedOperand)
+        {
+            double integerOperand;
+            bool operandIsInteger = double.TryParse(insertedOperand, out integerOperand);
+            return integerOperand;
+        }
+
+        static bool CheckIsOperationPossible(string insertedOperation)
+        {
+            bool isOperationPossible;
+            if (insertedOperation == "+" | insertedOperation == "-" | insertedOperation == "*" | insertedOperation == "/" | insertedOperation == "^")
+            {
+                isOperationPossible = true;
+            }
+            else
+            {
+                isOperationPossible = false;
+            }
+            return isOperationPossible;
+        }
+
+        static void Main()
+        {
+            bool isOperandInteger;
             double firstOperand;
-            bool firstOperandIsInteger = double.TryParse(insertedFirstOperand, out firstOperand);
-
-            if (firstOperandIsInteger == false)
+            do
             {
-                Console.WriteLine("You have entered not an integer!");
-                goto Label1;
-            }
+                Console.WriteLine("Enter first integer operand");
+                string insertedFirstOperand = Console.ReadLine();
 
-        Label2:
-            Console.WriteLine("Enter second integer operand");
-            string insertedSecondOperand = Console.ReadLine();
+                isOperandInteger = TryToConvertInsertedOperandToInteger(insertedFirstOperand);
+                firstOperand = ConvertInsertedOperandToInteger(insertedFirstOperand);
+
+                if (isOperandInteger == false)
+                {
+                    Console.WriteLine("You have entered not an integer!");
+                }
+            }
+            while (isOperandInteger == false);
+
             double secondOperand;
-            bool secondOperandIsInteger = double.TryParse(insertedSecondOperand, out secondOperand);
-
-            if (secondOperandIsInteger == false)
+            do
             {
-                Console.WriteLine("You have entered not an integer!");
-                goto Label2;
+                Console.WriteLine("Enter second integer operand");
+                string insertedSecondOperand = Console.ReadLine();
+
+                isOperandInteger = TryToConvertInsertedOperandToInteger(insertedSecondOperand);
+                secondOperand = ConvertInsertedOperandToInteger(insertedSecondOperand);
+
+                if (isOperandInteger == false)
+                {
+                    Console.WriteLine("You have entered not an integer!");
+                }
             }
+            while (isOperandInteger == false);
 
-        Label3:
-            Console.WriteLine("What operation is necessary to carry out?");
-            string operation = Console.ReadLine();
-
-            switch (operation)
+            bool isOperationPossible;
+            do
             {
-                case "+":
-                    double result = firstOperand + secondOperand;
-                    Console.WriteLine("{0} + {1} = {2}", firstOperand, secondOperand, result);
-                    break;
-                case "-":
-                    result = firstOperand - secondOperand;
-                    Console.WriteLine("{0} - {1} = {2}", firstOperand, secondOperand, result);
-                    break;
-                case "/":
-                    result = firstOperand / secondOperand;
-                    Console.WriteLine("{0} / {1} = {2}", firstOperand, secondOperand, result);
-                    break;
-                case "*":
-                    result = firstOperand * secondOperand;
-                    Console.WriteLine("{0} * {1} = {2}", firstOperand, secondOperand, result);
-                    break;
-                case "^":
-                    result = Math.Pow(firstOperand, secondOperand); ;
-                    Console.WriteLine("{0} ^ {1} = {2}", firstOperand, secondOperand, result);
-                    break;
-                default:
-                    Console.WriteLine("You have entered incorrect operation");
-                    goto Label3;
+                Console.WriteLine("What operation is necessary to carry out?");
+                string operation = Console.ReadLine();
+
+                isOperationPossible = CheckIsOperationPossible(operation);
+
+                switch (operation)
+                {
+                    case "+":
+                        double result = firstOperand + secondOperand;
+                        Console.WriteLine("{0} + {1} = {2}", firstOperand, secondOperand, result);
+                        break;
+                    case "-":
+                        result = firstOperand - secondOperand;
+                        Console.WriteLine("{0} - {1} = {2}", firstOperand, secondOperand, result);
+                        break;
+                    case "/":
+                        result = firstOperand / secondOperand;
+                        Console.WriteLine("{0} / {1} = {2}", firstOperand, secondOperand, result);
+                        break;
+                    case "*":
+                        result = firstOperand * secondOperand;
+                        Console.WriteLine("{0} * {1} = {2}", firstOperand, secondOperand, result);
+                        break;
+                    case "^":
+                        result = Math.Pow(firstOperand, secondOperand); ;
+                        Console.WriteLine("{0} ^ {1} = {2}", firstOperand, secondOperand, result);
+                        break;
+                    default:
+                        Console.WriteLine("You have entered incorrect operation");
+                        break;
+                }
             }
+            while (isOperationPossible == false);
+
+            Console.ReadKey();
         }
     }
 }

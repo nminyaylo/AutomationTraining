@@ -10,7 +10,7 @@ namespace AuthenticationApp
 {
     class Program
     {
-        static bool Authentication()
+        static bool CheckAuthentication()
         {
             string user = "admin";
             string password = "pass";
@@ -28,23 +28,28 @@ namespace AuthenticationApp
 
         static void Main()
         {
-            if (Authentication() == true)
+            int i = 0;
+            do
             {
-                Console.WriteLine("Authentication successful!");
-            }
-            else 
-            {
-                int i = 0;
-                do
+                if (CheckAuthentication() == true)
+                {
+                    Console.WriteLine("Authentication successful!");
+                    break;
+                }
+                else if (i < 2)
                 {
                     Console.WriteLine("Authentication failed. Please try again.");
-                    Authentication();
                     i++;
                 }
-                while (i < 2);
 
-                Console.WriteLine("Authentication failed :(");
+                else
+                {
+                    Console.WriteLine("Authentication failed :(");
+                    i++;
+                }
+ 
             }
+            while (i < 3);
 
             Console.ReadKey();
         }
