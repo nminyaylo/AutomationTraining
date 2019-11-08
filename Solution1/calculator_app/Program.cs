@@ -26,7 +26,7 @@ namespace CalculatorApp
         static bool CheckIsOperationPossible(string insertedOperation)
         {
             bool isOperationPossible;
-            if (insertedOperation == "+" | insertedOperation == "-" | insertedOperation == "*" | insertedOperation == "/" | insertedOperation == "^")
+            if (insertedOperation == "+" || insertedOperation == "-" || insertedOperation == "*" || insertedOperation == "/" || insertedOperation == "^")
             {
                 isOperationPossible = true;
             }
@@ -109,7 +109,9 @@ namespace CalculatorApp
             }
             while (isOperationPossible == false);
 
-            Console.ReadKey();
+            Console.WriteLine("\n");
+
+            Main();
         }
     }
 }
