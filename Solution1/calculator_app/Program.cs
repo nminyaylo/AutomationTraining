@@ -9,78 +9,55 @@ namespace CalculatorApp
 {
     class Program
     {
-        static bool TryToConvertInsertedOperandToInteger(string insertedOperand)
+        static double InsertIntegerValue()
         {
-            double integerOperand;
-            bool operandIsInteger = double.TryParse(insertedOperand, out integerOperand);
-            return operandIsInteger;
+            var result = false;
+            double resultConverted = 0;
+            while (!result)
+            {
+                var userInput = Console.ReadLine();
+                result = double.TryParse(userInput, out resultConverted);
+                if (!result)
+                {
+                    Console.WriteLine("You have entered not an integer! Please insert integer value:");
+                }
+            }
+            return resultConverted;
         }
 
-        static double ConvertInsertedOperandToInteger(string insertedOperand)
-        {
-            double integerOperand;
-            bool operandIsInteger = double.TryParse(insertedOperand, out integerOperand);
-            return integerOperand;
-        }
-
-        static bool CheckIsOperationPossible(string insertedOperation)
-        {
-            bool isOperationPossible;
-            if (insertedOperation == "+" || insertedOperation == "-" || insertedOperation == "*" || insertedOperation == "/" || insertedOperation == "^")
-            {
-                isOperationPossible = true;
-            }
-            else
-            {
-                isOperationPossible = false;
-            }
-            return isOperationPossible;
-        }
+        //static bool CheckIsOperationPossible(string insertedOperation)
+        //{
+        //    bool isOperationPossible;
+        //    if (insertedOperation == "+" || insertedOperation == "-" || insertedOperation == "*" || insertedOperation == "/" || insertedOperation == "^")
+        //    {
+        //        isOperationPossible = true;
+        //    }
+        //    else
+        //    {
+        //        isOperationPossible = false;
+        //    }
+        //    return isOperationPossible;
+        //}
 
         static void Main()
         {
             do
             {
-                bool isOperandInteger;
-                double firstOperand;
-                do
-                {
-                    Console.WriteLine("Enter first integer operand");
-                    string insertedFirstOperand = Console.ReadLine();
 
-                    isOperandInteger = TryToConvertInsertedOperandToInteger(insertedFirstOperand);
-                    firstOperand = ConvertInsertedOperandToInteger(insertedFirstOperand);
+                Console.WriteLine("Enter first integer operand");
+                double firstOperand = InsertIntegerValue();
 
-                    if (isOperandInteger == false)
-                    {
-                        Console.WriteLine("You have entered not an integer!");
-                    }
-                }
-                while (isOperandInteger == false);
 
-                double secondOperand;
-                do
-                {
-                    Console.WriteLine("Enter second integer operand");
-                    string insertedSecondOperand = Console.ReadLine();
+                Console.WriteLine("Enter second integer operand");
+                double secondOperand = InsertIntegerValue();
 
-                    isOperandInteger = TryToConvertInsertedOperandToInteger(insertedSecondOperand);
-                    secondOperand = ConvertInsertedOperandToInteger(insertedSecondOperand);
-
-                    if (isOperandInteger == false)
-                    {
-                        Console.WriteLine("You have entered not an integer!");
-                    }
-                }
-                while (isOperandInteger == false);
 
                 bool isOperationPossible;
                 do
                 {
                     Console.WriteLine("What operation is necessary to carry out?");
                     string operation = Console.ReadLine();
-
-                    isOperationPossible = CheckIsOperationPossible(operation);
+                    isOperationPossible = true;
 
                     switch (operation)
                     {
@@ -105,11 +82,12 @@ namespace CalculatorApp
                             Console.WriteLine("{0} ^ {1} = {2}", firstOperand, secondOperand, result);
                             break;
                         default:
+                            isOperationPossible = false;
                             Console.WriteLine("You have entered incorrect operation");
                             break;
                     }
                 }
-                while (isOperationPossible == false);
+                while (!isOperationPossible);
 
                 Console.WriteLine("\n");
             }

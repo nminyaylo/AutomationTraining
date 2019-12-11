@@ -28,28 +28,22 @@ namespace AuthenticationApp
 
         static void Main()
         {
-            int i = 0;
-            do
+            for (int i = 0; i < 3; i++)
             {
-                if (CheckAuthentication() == true)
+                if (CheckAuthentication())
                 {
                     Console.WriteLine("Authentication successful!");
                     break;
                 }
-                else if (i < 2)
+                if (i < 2)
                 {
                     Console.WriteLine("Authentication failed. Please try again.");
-                    i++;
                 }
-
                 else
                 {
                     Console.WriteLine("Authentication failed :(");
-                    i++;
                 }
- 
             }
-            while (i < 3);
 
             Console.ReadKey();
         }
