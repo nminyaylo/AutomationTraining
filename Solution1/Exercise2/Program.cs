@@ -7,57 +7,35 @@ namespace Exercise2
 {
     class Program
     {
-        static double? ConvertInsertedValueToInteger(string insertedValue)
+
+        static double InsertIntegerValue()
         {
-            return double.TryParse(insertedValue, out var temp) ? double.Parse(insertedValue) : (double?)null;
+            var result = false;
+            double resultConverted = 0;
+            while (!result)
+            {
+                var userInput = Console.ReadLine();
+                result = double.TryParse(userInput, out resultConverted);
+                if (!result)
+                {
+                    Console.WriteLine("You have entered not an integer! Please insert integer value:");
+                }
+            }
+            return resultConverted;
         }
 
         static void Main()
-        {
-            double? width;
-            do
-            {
-                Console.WriteLine("Insert integer value of parallelepiped width:");
-                string insertedWidth = Console.ReadLine();
-                width = ConvertInsertedValueToInteger(insertedWidth);
+        { 
+            Console.WriteLine("Insert integer value of parallelepiped width:");
+            double width = InsertIntegerValue();
 
-                if (width == null)
-                {
-                    Console.WriteLine("You have entered not an integer! Please insert integer value of parallelepiped width:");
-                }
-            }
-            while (width == null);
+            Console.WriteLine("Insert integer value of parallelepiped height:");
+            double height = InsertIntegerValue();
 
-            double? height;
-            do
-            {
-                Console.WriteLine("Insert integer value of parallelepiped height:");
-                string insertedHeight = Console.ReadLine();
-                height = ConvertInsertedValueToInteger(insertedHeight);
+            Console.WriteLine("Insert integer value of parallelepiped length:");
+            double length = InsertIntegerValue();
 
-                if (height == null)
-                {
-                    Console.WriteLine("You have entered not an integer! Please insert integer value of parallelepiped height:");
-                }
-            }
-            while (height == null);
-
-            double? length;
-            do
-            {
-                Console.WriteLine("Insert integer value of parallelepiped length:");
-                string insertedLength = Console.ReadLine();
-                length = ConvertInsertedValueToInteger(insertedLength);
-
-                if (length == null)
-                {
-                    Console.WriteLine("You have entered not an integer! Please insert integer value of parallelepiped length:");
-                }
-            }
-            while (length == null);
-
-            var rectangleDiagonal = Math.Sqrt(Math.Pow((double)width, 2) + Math.Pow((double)height, 2));
-            var parallelepipedDiagonal = Math.Sqrt(Math.Pow(rectangleDiagonal, 2) + Math.Pow((double)length, 2)); ;
+            var parallelepipedDiagonal = Math.Sqrt(Math.Pow(width, 2) + Math.Pow(height, 2) + Math.Pow(length, 2));
 
             Console.WriteLine("Parallelepiped diagonal length: " + parallelepipedDiagonal);
 

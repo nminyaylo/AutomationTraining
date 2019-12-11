@@ -21,7 +21,7 @@ namespace Exercise4
             Console.WriteLine("Insert any symbol:");
             string symbol = Console.ReadLine();
 
-            string concatStrings = (firstLine + secondLine);
+            string concatStrings = firstLine + secondLine;
 
             int lastIndexOfSymbol = concatStrings.LastIndexOf(symbol);
 
