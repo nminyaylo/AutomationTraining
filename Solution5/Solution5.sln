@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geometric_tasks_app", "geometric_tasks_app\geometric_tasks_app.csproj", "{84774678-B87E-473E-B4BA-CE7F5E4E6839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrix_trace_app", "matrix_trace_app\matrix_trace_app.csproj", "{FEDD89AC-CB78-484B-9C05-EB126EE8C1D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84774678-B87E-473E-B4BA-CE7F5E4E6839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84774678-B87E-473E-B4BA-CE7F5E4E6839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84774678-B87E-473E-B4BA-CE7F5E4E6839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84774678-B87E-473E-B4BA-CE7F5E4E6839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEDD89AC-CB78-484B-9C05-EB126EE8C1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEDD89AC-CB78-484B-9C05-EB126EE8C1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEDD89AC-CB78-484B-9C05-EB126EE8C1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEDD89AC-CB78-484B-9C05-EB126EE8C1D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAA7CEE4-1BC9-474D-BE3F-6DFD20835193}
+	EndGlobalSection
+EndGlobal
