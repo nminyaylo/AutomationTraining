@@ -24,6 +24,7 @@ namespace matrix_trace_app
         {
             Console.WriteLine("Insert matrix size:");
             int matrixSize = InsertIntegerValue();
+            int matrixTrace = 0;
 
             Console.WriteLine("\n");
 
@@ -37,30 +38,13 @@ namespace matrix_trace_app
                 {
                     matrix[i, j] = random.Next(0, 10);
                     Console.Write($"{matrix[i, j]} \t");
-                }
-                Console.WriteLine();
-            }
 
-            Console.WriteLine("\n");
-
-            int[] diagonal = new int[matrixSize];
-
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
                     if (i == j)
                     {
-                        diagonal[i] = matrix[i, j];
+                        matrixTrace += matrix[i, j];
                     }
                 }
-            }
-
-            int matrixTrace = 0;
-
-            foreach (int i in diagonal)
-            {
-                matrixTrace += i;
+                Console.WriteLine("\n");
             }
 
             Console.WriteLine($"Matrix trace is {matrixTrace}");
