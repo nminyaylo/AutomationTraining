@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "singleton", "Singleton\singleton.csproj", "{43555339-26EF-4E3A-BEBC-0C11CF331EB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "single", "Singleton\single.csproj", "{43555339-26EF-4E3A-BEBC-0C11CF331EB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geometry_app", "geometry_app\geometry_app.csproj", "{8E2CD0D4-A6F6-4B1C-9818-862106ECC7A8}"
 EndProject
