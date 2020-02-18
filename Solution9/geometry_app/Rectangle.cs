@@ -4,8 +4,8 @@ namespace geometry_app
 {
     class Rectangle : Figure
     {
-        private float rectangeSideOne;
-        private float rectangeSideTwo;
+        private readonly float rectangeSideOne;
+        private readonly float rectangeSideTwo;
 
         public Rectangle(float rectangeSideOne, float rectangeSideTwo)
         {

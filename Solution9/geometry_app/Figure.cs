@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace geometry_app
 {
     abstract class Figure

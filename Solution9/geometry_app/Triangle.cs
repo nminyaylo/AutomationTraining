@@ -4,9 +4,9 @@ namespace geometry_app
 {
     class Triangle : Figure
     {
-        private float triangleSideOne;
-        private float triangleSideTwo;
-        private float triangleSideThree;
+        private readonly float triangleSideOne;
+        private readonly float triangleSideTwo;
+        private readonly float triangleSideThree;
 
         public Triangle(float triangleSideOne, float triangleSideTwo, float triangleSideThree)
         {

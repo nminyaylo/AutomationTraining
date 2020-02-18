@@ -6,11 +6,11 @@ namespace geometry_app
     {
         static string InsertedFigure()
         {
-            string figureType = "";
+            var figureType = "";
             var match = false;
             while (!match)
             {
-                string userInput = Console.ReadLine();
+                var userInput = Console.ReadLine();
 
                 switch (userInput)
                 {
@@ -56,7 +56,7 @@ namespace geometry_app
         static void Main()
         {
             Console.WriteLine("Enter type of figure using following letters: R (for rectangle), S (for square), T (for triangle)");
-            string insertedFigure = InsertedFigure();
+            var insertedFigure = InsertedFigure();
             Figure figure = null;
 
             switch (insertedFigure)

@@ -4,7 +4,7 @@ namespace geometry_app
 {
     class Square : Figure
     {
-        private float squareSide;
+        private readonly float squareSide;
 
         public Square(float squareSide)
         {
